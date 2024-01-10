@@ -1,0 +1,13 @@
+.cell {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #1a608f;
+}
+
+.blue {
+    background-color: #1a608f;
+}
+
+.white {
+    background-color: #f6f6f6;
+}
