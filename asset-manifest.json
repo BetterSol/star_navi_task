@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.707fdb20.css",
-    "main.js": "/static/js/main.cef2ddf1.js",
-    "static/js/787.2e8c185d.chunk.js": "/static/js/787.2e8c185d.chunk.js",
-    "index.html": "/index.html",
-    "main.707fdb20.css.map": "/static/css/main.707fdb20.css.map",
-    "main.cef2ddf1.js.map": "/static/js/main.cef2ddf1.js.map",
-    "787.2e8c185d.chunk.js.map": "/static/js/787.2e8c185d.chunk.js.map"
+    "main.css": "/star_navi_task/static/css/main.707fdb20.css",
+    "main.js": "/star_navi_task/static/js/main.c8bb3b8d.js",
+    "static/js/787.2e8c185d.chunk.js": "/star_navi_task/static/js/787.2e8c185d.chunk.js",
+    "index.html": "/star_navi_task/index.html",
+    "main.707fdb20.css.map": "/star_navi_task/static/css/main.707fdb20.css.map",
+    "main.c8bb3b8d.js.map": "/star_navi_task/static/js/main.c8bb3b8d.js.map",
+    "787.2e8c185d.chunk.js.map": "/star_navi_task/static/js/787.2e8c185d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.707fdb20.css",
-    "static/js/main.cef2ddf1.js"
+    "static/js/main.c8bb3b8d.js"
   ]
 }
