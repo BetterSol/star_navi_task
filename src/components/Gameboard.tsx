@@ -3,7 +3,12 @@ import { fetchModes } from '../api/api';
 import { Mode } from '../types/Mode';
 import { CellGrid } from './CellGrid';
 
-export const Gameboard: React.FC = () => {
+type Props = {
+    hoveredCells: string[];
+    setHoveredCells: (value: string[]) => void;
+}
+
+export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) => {
     const [gameModes, setGameModes] = useState<Mode[]>([]);
     const [selectedMode, setSelectedMode] = useState<Mode | null>(null);
 
@@ -59,7 +64,11 @@ export const Gameboard: React.FC = () => {
                 <button onClick={handleStart}>START</button>
             </div>
             {selectedMode && 
-                <CellGrid size={selectedMode.field} />
+                <CellGrid 
+                    size={selectedMode.field} 
+                    hoveredCells={hoveredCells}
+                    setHoveredCells={setHoveredCells}
+                />
             }
         </div>
     )

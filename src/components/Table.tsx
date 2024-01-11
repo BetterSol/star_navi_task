@@ -1,7 +1,11 @@
 import React from "react"
 
-export const Table: React.FC = () => {
-//........
+type Props = {
+    hoveredCells: string[]
+}
+
+export const Table: React.FC<Props> = ({ hoveredCells }) => {
+    console.log(hoveredCells);
     return (
         <div>
             {}
