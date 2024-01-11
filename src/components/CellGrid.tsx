@@ -10,7 +10,7 @@ type GridProps = {
 export const CellGrid: React.FC<GridProps> = ({ size, hoveredCells, setHoveredCells }) => {
     return (
         <table>
-            <tbody>
+            <tbody className="gameboard-container">
                 {Array.from(Array(size).keys()).map((rowNumber) => (
                     <tr key={rowNumber}>
                         {Array.from(Array(size).keys()).map((columnNumber) => (

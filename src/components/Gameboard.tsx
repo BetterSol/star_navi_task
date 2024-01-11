@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchModes } from '../api/api';
 import { Mode } from '../types/Mode';
 import { CellGrid } from './CellGrid';
+import '../styles/Gameboard.css'
 
 type Props = {
     hoveredCells: string[];
@@ -11,20 +12,20 @@ type Props = {
 export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) => {
     const [gameModes, setGameModes] = useState<Mode[]>([]);
     const [selectedMode, setSelectedMode] = useState<Mode | null>(null);
+    const [startGame, setStartGame] = useState<boolean>(false);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const modes = await fetchModes();
                 setGameModes(modes);
-                setSelectedMode(modes[0]);
             } catch (e) {
                 throw new Error('Failed to fetch modes');
             }
         };
 
         fetchData();
-    }, []);
+    }, [selectedMode]);
 
     const handleMode = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedModeId = event.target.value;
@@ -37,19 +38,21 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
             alert('Please select a mode before starting the game');
             return;
         }
-
+        setStartGame(true);
     }
 
     return (
         <div>
-            <div>
+            <div className='select-block'>
                 <label htmlFor="modeDropdown"></label>
                 <select 
                     id="modeDropdown"
                     onChange={handleMode}
-                    value={selectedMode?.id}
+                    value={selectedMode? selectedMode.id : ''}
+                    className='mode-dropdown'
+                    disabled={startGame}
                 >
-                    <option value="" disabled hidden>
+                    <option value="" disabled>
                         Pick Mode
                     </option>
                     {gameModes.map((mode) => (
@@ -61,7 +64,13 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
                         </option>
                     ))}                    
                 </select>
-                <button onClick={handleStart}>START</button>
+                <button 
+                    onClick={handleStart}
+                    className='button'
+                    disabled={startGame}
+                >
+                    START
+                </button>
             </div>
             {selectedMode && 
                 <CellGrid 

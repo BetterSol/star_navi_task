@@ -8,13 +8,13 @@ export const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-container">
         <Gameboard 
           hoveredCells={hoveredCells}
           setHoveredCells={setHoveredCells}
         />
         <Table hoveredCells={hoveredCells} />
-      </header>
+      </div>
     </div>
   );
 };

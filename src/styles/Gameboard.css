@@ -1,0 +1,19 @@
+.mode-dropdown {
+    padding: 5px;
+    border: transparent;
+    border-radius: 5px;
+}
+.mode-dropdown:focus {
+    outline: none;
+}
+
+.button {
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f6f6f6;
+    background-color: #1a608f;
+}

@@ -1,0 +1,14 @@
+.table-body {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* grid-template-rows: auto 1fr auto;
+    height: 300px; */
+    grid-gap: 1rem;
+}
+
+.hovered-cell {
+    padding: 10px;
+    color: #1a608f;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
