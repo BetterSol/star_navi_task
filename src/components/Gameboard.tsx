@@ -31,6 +31,8 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
         const selectedModeId = event.target.value;
         const mode = gameModes.find((mode) => mode.id === selectedModeId);
         setSelectedMode(mode || null);
+        setStartGame(false);
+        setHoveredCells([]);
     }
 
     const handleStart = () => {
@@ -42,7 +44,7 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
     }
 
     return (
-        <div>
+        <div className='game-block'>
             <div className='select-block'>
                 <label htmlFor="modeDropdown"></label>
                 <select 
@@ -50,7 +52,6 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
                     onChange={handleMode}
                     value={selectedMode? selectedMode.id : ''}
                     className='mode-dropdown'
-                    disabled={startGame}
                 >
                     <option value="" disabled>
                         Pick Mode
@@ -72,7 +73,7 @@ export const Gameboard: React.FC<Props> = ({ hoveredCells, setHoveredCells }) =>
                     START
                 </button>
             </div>
-            {selectedMode && 
+            {selectedMode && startGame &&
                 <CellGrid 
                     size={selectedMode.field} 
                     hoveredCells={hoveredCells}

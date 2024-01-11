@@ -3,12 +3,14 @@
 }
 
 .App-container {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
+  width: auto;
+  height: 96vh;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #282c34;
 }

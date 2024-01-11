@@ -1,10 +1,14 @@
+.game-block {
+    display: block;
+}
 .mode-dropdown {
     padding: 5px;
+    margin-bottom: 200px;
     border: transparent;
     border-radius: 5px;
 }
 .mode-dropdown:focus {
-    outline: none;
+    outline: #4b82a6;
 }
 
 .button {
