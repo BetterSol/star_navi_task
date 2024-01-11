@@ -2,8 +2,8 @@
     display: block;
 }
 .mode-dropdown {
-    padding: 5px;
-    margin-bottom: 200px;
+    padding: 5px 15px;
+    margin-bottom: 150px;
     border: transparent;
     border-radius: 5px;
 }
@@ -16,8 +16,8 @@
     margin: 5px 10px;
     border: transparent;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    color: #f6f6f6;
-    background-color: #1a608f;
+    color: #fefae0;
+    background-color: #bc6c25;
 }

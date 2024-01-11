@@ -1,15 +1,22 @@
+.table-container {
+    display: block;
+}
+
+.table-name {
+    margin-bottom: 20px;
+}
 .table-body {
     display: grid;
     grid-auto-flow: row;
-    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* height: 700px; */
+    grid-template-columns: repeat(auto-fill, 150px);
     grid-gap: 1rem;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .hovered-cell {
     padding: 1rem;
-    color: #1a608f;
-    background-color: #f6f6f6;
+    color: #bc6c25;
+    background-color: #fefae0;
     border-radius: 8px;
 }

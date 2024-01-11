@@ -8,7 +8,12 @@ type Props = {
     setHoveredCells: (value: string[]) => void;
 }
 
-export const Cell: React.FC<Props> = ({ rowNumber, columnNumber, hoveredCells, setHoveredCells }) => {
+export const Cell: React.FC<Props> = ({ 
+    rowNumber, 
+    columnNumber, 
+    hoveredCells, 
+    setHoveredCells 
+}) => {
     const [color, setColor] = useState('white');
     const [isHovered, setIsHovered] = useState(false);
 
