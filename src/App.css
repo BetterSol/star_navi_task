@@ -7,9 +7,30 @@
   height: 96vh;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-content: center;
   gap: 2rem;
   font-size: calc(10px + 2vmin);
   color: #fefae0;
+}
+
+.game-block {
+  display: block;
+  overflow: scroll;
+
+}
+.game-block::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  background-color: #283618;
+} 
+
+.game-block::-webkit-scrollbar-thumb {
+background-image: linear-gradient(180deg, #bc6c25 0%, #fefae0 99%);
+box-shadow: inset 2px 2px 5px 0 rgba(#fefae0, 0.5);
+border-radius: 10px;
+} 
+
+.game-block::-webkit-scrollbar-corner { 
+  background-color: #283618; 
 }

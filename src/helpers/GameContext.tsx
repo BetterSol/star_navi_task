@@ -3,7 +3,7 @@ import { fetchModes } from '../api/api';
 import { ContextProps } from '../types/ContextPrps';
 import { Mode } from '../types/Mode';
 import { GameBoard } from '../components/GameBoard';
-import '../styles/Gameboard.css'
+import '../styles/GameContext.css'
 
 
 export const GameContext: React.FC<ContextProps> = ({ hoveredCells, setHoveredCells }) => {
@@ -41,7 +41,7 @@ export const GameContext: React.FC<ContextProps> = ({ hoveredCells, setHoveredCe
     }
 
     return (
-        <div className='game-block'>
+        <div className='game-block game-container'>
             <div className='select-block'>
                 <label htmlFor="modeDropdown"></label>
                 <select 

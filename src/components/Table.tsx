@@ -7,7 +7,7 @@ type Props = {
 
 export const Table: React.FC<Props> = ({ hoveredCells }) => {
     return (
-        <div className="table-container">
+        <div className="game-block table-container">
             <div className="table-name">
                 Hover squares
             </div>

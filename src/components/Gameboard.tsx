@@ -1,11 +1,11 @@
 import React from "react";
 import { GridProps } from "../types/GridProps";
 import { Cell } from "./GameCell";
-import '../styles/CellGrid.css'
+import '../styles/GameBoard.css'
 
 export const GameBoard: React.FC<GridProps> = ({ size, hoveredCells, setHoveredCells }) => {
     return (
-        <table className="gameboard-container">
+        <table className="gameboard">
             <tbody>
                     {Array.from(Array(size).keys()).map((rowNumber) => (
                         <tr key={rowNumber}>
