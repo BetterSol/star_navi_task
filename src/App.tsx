@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Gameboard } from './components/Gameboard';
+import { GameContext } from './helpers/GameContext';
 import { Table } from './components/Table';
 
 export const App = () => {
@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div className="App">
       <div className="App-container">
-        <Gameboard 
+        <GameContext 
           hoveredCells={hoveredCells}
           setHoveredCells={setHoveredCells}
         />

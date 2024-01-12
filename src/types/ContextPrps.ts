@@ -1,7 +1,4 @@
-export type CellProps = {
-    rowNumber: number;
-    columnNumber: number;
+export type ContextProps = {
     hoveredCells: string[];
     setHoveredCells: (value: string[]) => void;
 }
-

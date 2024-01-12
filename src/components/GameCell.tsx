@@ -1,14 +1,8 @@
 import { useState } from 'react';
+import { CellProps } from '../types/CellProps';
 import '../styles/GameCell.css'
 
-type Props = {
-    rowNumber: number;
-    columnNumber: number;
-    hoveredCells: string[];
-    setHoveredCells: (value: string[]) => void;
-}
-
-export const Cell: React.FC<Props> = ({ 
+export const Cell: React.FC<CellProps> = ({ 
     rowNumber, 
     columnNumber, 
     hoveredCells, 
