@@ -26,9 +26,9 @@
 } 
 
 .game-block::-webkit-scrollbar-thumb {
-background-image: linear-gradient(180deg, #bc6c25 0%, #fefae0 99%);
-box-shadow: inset 2px 2px 5px 0 rgba(#fefae0, 0.5);
-border-radius: 10px;
+  background-image: linear-gradient(180deg, #bc6c25 0%, #fefae0 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fefae0, 0.5);
+  border-radius: 10px;
 } 
 
 .game-block::-webkit-scrollbar-corner { 

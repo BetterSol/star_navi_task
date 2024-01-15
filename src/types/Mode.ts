@@ -1,5 +1,5 @@
 export type Mode = {
-    name: string;
-    field: number;
-    id: string;
+  name: string;
+  field: number;
+  id: string;
 }
