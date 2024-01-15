@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/star_navi_task/static/css/main.1e1fc250.css",
+    "main.css": "/star_navi_task/static/css/main.bda60946.css",
     "main.js": "/star_navi_task/static/js/main.c8b9bda8.js",
     "static/js/787.2e8c185d.chunk.js": "/star_navi_task/static/js/787.2e8c185d.chunk.js",
     "index.html": "/star_navi_task/index.html",
-    "main.1e1fc250.css.map": "/star_navi_task/static/css/main.1e1fc250.css.map",
+    "main.bda60946.css.map": "/star_navi_task/static/css/main.bda60946.css.map",
     "main.c8b9bda8.js.map": "/star_navi_task/static/js/main.c8b9bda8.js.map",
     "787.2e8c185d.chunk.js.map": "/star_navi_task/static/js/787.2e8c185d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e1fc250.css",
+    "static/css/main.bda60946.css",
     "static/js/main.c8b9bda8.js"
   ]
 }
